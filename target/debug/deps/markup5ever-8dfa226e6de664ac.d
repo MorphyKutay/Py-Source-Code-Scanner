@@ -1,0 +1,15 @@
+C:\Users\aydog\Desktop\main\target\debug\deps\libmarkup5ever-8dfa226e6de664ac.rmeta: C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\lib.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\data\mod.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\interface\mod.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\interface\tree_builder.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\serialize.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\util\buffer_queue.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\util\smallcharset.rs C:\Users\aydog\Desktop\main\target\debug\build\markup5ever-37e09c859dfda4c9\out/generated.rs C:\Users\aydog\Desktop\main\target\debug\build\markup5ever-37e09c859dfda4c9\out/named_entities.rs
+
+C:\Users\aydog\Desktop\main\target\debug\deps\markup5ever-8dfa226e6de664ac.d: C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\lib.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\data\mod.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\interface\mod.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\interface\tree_builder.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\serialize.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\util\buffer_queue.rs C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\util\smallcharset.rs C:\Users\aydog\Desktop\main\target\debug\build\markup5ever-37e09c859dfda4c9\out/generated.rs C:\Users\aydog\Desktop\main\target\debug\build\markup5ever-37e09c859dfda4c9\out/named_entities.rs
+
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\lib.rs:
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\data\mod.rs:
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\interface\mod.rs:
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\interface\tree_builder.rs:
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\serialize.rs:
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\util\buffer_queue.rs:
+C:\Users\aydog\.cargo\registry\src\index.crates.io-6f17d22bba15001f\markup5ever-0.12.1\util\smallcharset.rs:
+C:\Users\aydog\Desktop\main\target\debug\build\markup5ever-37e09c859dfda4c9\out/generated.rs:
+C:\Users\aydog\Desktop\main\target\debug\build\markup5ever-37e09c859dfda4c9\out/named_entities.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\aydog\\Desktop\\main\\target\\debug\\build\\markup5ever-37e09c859dfda4c9\\out
