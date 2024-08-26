@@ -8,6 +8,9 @@ use figlet_rs::FIGfont;
 mod reg;
 use reg::reg;
 
+mod django;
+
+
 #[derive(Parser, Debug)]
 #[command(author = "MorphyKutay", version = "1.0", about = "Python Vulnerability Scanner")]
 struct Args {
@@ -35,7 +38,10 @@ fn main() -> io::Result<()> {
 
                     let pattern = reg();
                     let lines: Vec<String> = contents.lines().map(|s| s.to_string()).collect();
-
+                    // django.rs kontrol
+                    django::process_file(path.to_str().unwrap())?;
+                    
+                    //reg.rs kontrol
                     for (line_number, line) in lines.iter().enumerate() {
                         let line_number_1_based = line_number + 1;
                         if pattern.is_match(line) {
