@@ -1,59 +1,53 @@
-use clap::{Parser, Command};
-use regex::Regex;
+use clap::{Parser};
+use regex::{Regex, Captures};
 use walkdir::WalkDir;
-use std::io::{self, Read};
+use std::io;
 use std::fs;
 use figlet_rs::FIGfont;
-
 
 mod reg;
 use reg::reg;
 
-
 #[derive(Parser, Debug)]
-#[command(author = "MorphyKutay", version = "1.0", about = "Python Vulnerable Scanner", long_about = None)]
+#[command(author = "MorphyKutay", version = "1.0", about = "Python Vulnerability Scanner")]
 struct Args {
- 
     #[arg(short, long, help = "Path to the file to be processed")]
     path: String,
-
 }
 
-
-
-fn main()-> io::Result<()> {
-
+fn main() -> io::Result<()> {
     let text = "Py Scanner";
     let figfont = FIGfont::standard().unwrap();
     let rendered = figfont.convert(text).unwrap();
     println!("{}", rendered);
 
     let args = Args::parse();
-
-    let mut folder = args.path;
+    let folder = args.path;
 
     for entry in WalkDir::new(folder) {
-        let entry = entry.unwrap();
-        let dosya = entry.path();
-       
-        if dosya.is_file() {
-            if let Some(extension) = dosya.extension() {
+        let entry = entry?;
+        let path = entry.path();
+
+        if path.is_file() {
+            if let Some(extension) = path.extension() {
                 if extension == "py" {
-                    let contents = fs::read_to_string(dosya)?;
-                    println!("File: {}\nVulnerable  Content:\n{}", dosya.display(), contents);
+                    let contents = fs::read_to_string(path)?;
 
                     let pattern = reg();
-                    for cap in pattern.captures_iter(&contents) {
-                        println!("Vulnerable Function: {}", &cap[0]);
+                    let lines: Vec<String> = contents.lines().map(|s| s.to_string()).collect();
+
+                    for (line_number, line) in lines.iter().enumerate() {
+                        let line_number_1_based = line_number + 1;
+                        if pattern.is_match(line) {
+                            println!("[!] Potential Vulnerability Found");
+                            println!("File: {}", path.display());
+                            println!("Line {}: {}\n------", line_number_1_based, line);
+                        }
                     }
                 }
             }
         }
     }
 
-
-
-
-    
     Ok(())
 }
