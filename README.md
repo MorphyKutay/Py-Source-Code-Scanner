@@ -20,4 +20,13 @@ $ ./main.exe --help
 
 ```
 
+**OR (Linux)**
+```
+
+$ wget https://github.com/MorphyKutay/Py-Source-Code-Scanner/releases/download/1.0/main
+
+$ ./main --help
+
+```
+
 ![alt text](https://github.com/MorphyKutay/Py-Source-Code-Scanner/blob/main/ss1.png)
