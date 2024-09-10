@@ -9,7 +9,7 @@ mod reg;
 use reg::reg;
 
 mod django;
-
+mod pathtraversel;
 
 #[derive(Parser, Debug)]
 #[command(author = "MorphyKutay", version = "1.0", about = "Python Vulnerability Scanner")]
@@ -40,7 +40,11 @@ fn main() -> io::Result<()> {
                     let lines: Vec<String> = contents.lines().map(|s| s.to_string()).collect();
                     // django.rs kontrol
                     django::process_file(path.to_str().unwrap())?;
-                    
+
+                    //path traversel
+                    pathtraversel::process_file_for_path_traversal(path.to_str().unwrap())?;
+
+
                     //reg.rs kontrol
                     for (line_number, line) in lines.iter().enumerate() {
                         let line_number_1_based = line_number + 1;
